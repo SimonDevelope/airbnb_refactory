@@ -1,5 +1,6 @@
 .Logo-total-area {
     flex: 1 0 140px !important;
+    max-width: 550px !important;
 }
 .Logo-boundary-area {
     display: inline-flex !important;

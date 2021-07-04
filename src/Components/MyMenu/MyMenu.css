@@ -1,0 +1,100 @@
+.Right-menu-total-wrapper {
+    /* background: yellowgreen !important; */
+    display: flex !important;
+    flex: 1 0 140px !important;
+    align-items: center !important;
+}
+.Left-container-wrapper {
+    display: flex !important;
+    position: relative !important;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100% !important;
+}
+.To-be-host-address-outter-wrapper {
+    position:relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 8px !important;
+    width: 100% !important;
+}
+.To-be-host-address-wrapper {
+    text-decoration-line: none !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+    position:relative !important;
+    justify-content: center !important;
+}
+.To-be-host-word-attr {
+    color: #222222 !important;
+    display: inline-block !important;
+}
+
+.Icon-container-btn-attr {
+    width: 75px !important;
+    height: 40px !important;
+    display: flex !important;
+    border-radius: 30px !important;
+    border: 1px solid #DDDDDD !important;
+    background: #FFFFFF !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+.World-Icon-Total-wrapper {
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    align-items: center !important;
+    position: relative !important;
+    padding-right: 8px !important;
+    margin: 0 !important;
+}
+.World-icon-inner-wrapper {
+    background: transparent !important;
+    border: none !important;
+    width: 40px !important;
+    height: 40px !important;
+    cursor: pointer !important;
+    position:relative !important;
+}
+.Icon-container-wrapper {
+    width: 80px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.Hamberger-icon-wrapper {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    padding-left: 5px !important;
+}
+.People-icon-wrapper {
+    display: inline-block !important;
+    width: 30px !important;
+    height: 30px !important;
+    justify-content: center !important;
+    padding-left: 10px !important;
+}
+.Svg-style {
+    display: block !important;
+    height: 16px !important;
+    width: 16px !important;
+    fill: currentcolor !important;
+}
+.Svg-icon-container-style-hamburger {
+    display: block !important;
+    fill: none !important;
+    height: 16px !important;
+    width: 16px !important;
+    stroke: currentcolor !important;
+    stroke-width: 3 !important;
+    overflow: visible !important;
+}
+.Svg-icon-container-style-people {
+    display: block !important;
+    height: 30px !important;
+    width: 30px !important;
+    color: #78787878 !important;
+}

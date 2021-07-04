@@ -1,5 +1,6 @@
 import React from 'react';
 import './MiddleMenu.css';
+import {Lodge} from './SearchBar/SearchBar';
 
 export const MenuList = ({content}) => {
     return (
@@ -36,7 +37,7 @@ function MiddleMenu () {
             <div className='Middle-inner-contents-wrapper'>
                 <div>
                     <div>
-                        <form>
+                        <form className='Middle-inner-area-attr'>
                             <fieldset className='Middle-inner-contents-area'>
                                 <div className='Middle-menu-list'>
                                     {
@@ -46,7 +47,7 @@ function MiddleMenu () {
                                     }
                                 </div>
                             </fieldset>
-                            {/* <div></div> */}
+                            <Lodge />
                         </form>
                     </div>
                 </div>
