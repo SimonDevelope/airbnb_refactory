@@ -16,11 +16,8 @@
 }
 .Location-total-wrapper {
     min-width: 0 !important;
-    width: 100% !important;
     display: flex !important;
-    flex: 1 1 0% !important;
     position: relative !important;
-    min-width: 280px !important;
 }
 .Inner-contents-wrapper {
     cursor: pointer !important;
@@ -56,12 +53,12 @@
     align-self: center !important;
     border-right: 1px solid #DDDDDD !important;
     height: 32px !important;
-    width: 100% !important;
 }
 .Check-in-N-out-outter-wrapper {
     display: flex !important;
     min-width: 0 !important;
-    width: 100% !important;
+    flex: 1 1 0% !important;
+    position: relative !important;
 }
 .Check-in-outter-wrapper {
     position: relative !important;
@@ -113,7 +110,7 @@
     position: relative !important;
     display: flex !important;
     align-items: center !important;
-    width: 100% !important;
+    
 }
 .NOP-inner-wrapper {
     border: 0 !important;
@@ -122,42 +119,53 @@
     line-height: inherit !important;
     overflow: visible !important;
     text-align: left !important;
+    display: flex !important;
+    flex: 1 0 0% !important;
+
 }
 .Main-btn-outter-wrapper {
-    flex: 0 0 auto !important;
     margin-left: -6px !important;
     padding-right: 9px !important;
     position: relative !important;
 }
 .Main-btn-inner-wrapper {
-    background: transparent !important;
+    position: relative !important;
+    background: #FF385C !important;
     border: 0 !important;
     color: #FFFFFF !important;
     cursor: pointer !important;
     display: inline-block !important;
     font-size: 16px !important;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     line-height: 18px !important;
     margin: 0 !important;
     padding: 0 !important;
     text-align: center !important;
-    background-color: #FF385C;
+    outline: none !important;
+    z-index: 0 !important;
+    border-radius: 24px !important;
 }
 .Modify-Icon-outter-wrapper {
     display: inline-block !important;
     padding: 16px !important;
     position: relative !important;
+    color: #FFFFFF !important;
 }
 .Svg-attr {
-    display: block !important;
-    fill: none !important;
+    display: inline-block !important;
+    fill: white !important;
     height: 16px !important;
     width: 16px !important;
     overflow: visible !important;
+    stroke-width: 4 !important;
+    /* color: #FFFFFF !important; */
 }
 .Location-search-total-wrapper {
     flex: 1 0 0% !important;
-    min-width: 100% !important;
+}
+.Modify-Icon-inner-wrapper {
+    color: #FFFFFF !important;
+    display: inline-block !important;
 }
 .Location-search-inner-wrapper {
     position: relative !important;

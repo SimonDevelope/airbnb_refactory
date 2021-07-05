@@ -2,24 +2,25 @@
     text-align: center !important;
     padding: 0 24px !important;
     min-width: 348px !important;
-
+    height: 100% !important;
 }
 .Middle-inner-contents-wrapper {
     padding: 0 80px !important;
     z-index: 2 !important;
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
+    left: 200px !important;
     transform-origin: 50% 0% !important;
+    position: absolute !important;
 }
 .Middle-inner-contents-area {
     margin: 0 !important;
     padding: 0 !important;
     border: 0 !important;
+    position: relative !important;
 }
 .Middle-inner-area-attr {
     margin: 0 auto !important;
-    max-width: 850px !important;
+    min-width: 850px !important;
+    position: relative !important;
 }
 .Middle-menu-list {
     display: flex !important;
@@ -27,6 +28,7 @@
     align-items: center !important;
     justify-content: center !important;
     border: 0px !important;
+    position: relative !important;
 }
 .Name-wrapper {
     font-size: 16px !important;

@@ -2,6 +2,8 @@
     padding: 0 80px !important;
     height: 80px !important;
     display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
     position: relative !important;
     margin: 0 auto !important;
 }

@@ -5,7 +5,7 @@ export const Lodge = () => {
     return(
         <div className='Total-outter-wrapper'>
             <div className='Total-inner-wrapper'>
-                <div classNam='Location-total-wrapper'>
+                <div className='Location-total-wrapper'>
                     <label className='Inner-contents-wrapper'>
                         <div className='Inner-contents-attr'>
                             <div className='Inner-word-attr'>위치</div>
@@ -16,7 +16,7 @@ export const Lodge = () => {
                         </div>
                     </label>
                 </div>
-                <div classNam='Partition-attr'></div>
+                <div className='Partition-attr'></div>
                 <div className='Check-in-N-out-outter-wrapper'>
                     <div className='Check-in-outter-wrapper'>
                         <div 
@@ -29,7 +29,7 @@ export const Lodge = () => {
                             </div>
                         </div>
                     </div>
-                    <div classNam='Partition-attr'></div>
+                    <div className='Partition-attr'></div>
                     <div className='Check-out-outter-wrapper'>
                         <div
                         type='button'
@@ -42,7 +42,7 @@ export const Lodge = () => {
                         </div>
                     </div>
                 </div>
-                <div classNam='Partition-attr'></div>
+                <div className='Partition-attr'></div>
                 <div className='NOP-outter-wrapper'>
                     <div 
                     type='button'
@@ -99,7 +99,7 @@ export const Experience = () => {
                         </label>
                     </div>
                 </div>
-                <div classNam='Partition-attr'></div>
+                <div className='Partition-attr'></div>
                 <div className='Date-time-outter-wrapper'>
                         <div 
                         type='button'
@@ -118,31 +118,4 @@ export const Experience = () => {
 
 
 
-// const CommonContents = () => {
-//     const InnerContent = ({contentsN}) => {
-//         return(
-//             <div></div>
-//         );
-//     }
-//     const contentsN = [
-//         {
-//             id: 1,
-//             name: '체크인',
-//             text: '날짜 입력'
-//         },
-//         {
-//             id: 2,
-//             name: '체크아웃',
-//             text: '날짜 입력'
-//         },
-//         {
-//             id: 3,
-//             name: '인원',
-//             text: '게스트 추가'
-//         },
-//     ] 
-//     return(
-//         <div></div>
-//     );
-// }
 
