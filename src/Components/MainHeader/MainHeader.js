@@ -1,7 +1,8 @@
 import React from 'react';
 import './MainHeader.css';
-import Logo from '../Logo/AirbnbLogo';
-import MiddleMenu from '../MiddleMenu/MiddleMenu';
+import Logo from './Logo/AirbnbLogo';
+import MiddleMenu from './MiddleMenu/MiddleMenu';
+import RightMenu from './MyMenu/MyMenu';
 
 
 function Header () {
@@ -9,7 +10,7 @@ function Header () {
         <header className='Header-area-attr'>
             <Logo/>
             <MiddleMenu/>
-        </header>
+            <RightMenu />
     );
 }
 
