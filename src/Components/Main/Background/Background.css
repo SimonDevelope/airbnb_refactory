@@ -1,0 +1,24 @@
+.Background-total-area-attr {
+    width: 100% !important;
+    height: 720px !important;
+    display: inline-block !important;
+    position: absolute !important;
+    background-repeat: no-repeat !important;
+    top: 0 !important;
+    left: 0 !important;;
+}
+.Background-image-attr {
+    display: inline-block !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 720px !important;
+    left: 0 !important;
+    top: 0 !important;
+    object-fit: cover !important;
+    
+}
+.Total-Main-wrapper {
+    position: absolute !important;
+    top: 0 !important;
+    width: 100% !important;
+}

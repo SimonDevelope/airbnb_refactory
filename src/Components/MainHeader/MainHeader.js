@@ -11,6 +11,7 @@ function Header () {
             <Logo/>
             <MiddleMenu/>
             <RightMenu />
+        </header>
     );
 }
 
