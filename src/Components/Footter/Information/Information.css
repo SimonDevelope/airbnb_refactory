@@ -1,0 +1,36 @@
+.Info-all-total-wrapper {
+    height: 100% !important;
+    padding: 0 80px !important;
+    position: relative !important;
+}
+.Info-inner-partition {
+    width: 100% !important;
+    height: 100% !important;
+    display: grid !important;
+    grid-template-rows: repeat(1, 100%) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 150px 150px !important;
+}
+.Info-list-area-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+}
+.Info-list-wrapper {
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 0 !important;
+    padding-top: 24px !important;
+}
+.Info-common-list-attr {
+    margin-top: 15px !important;
+}
+.Info-title-common-list-attr {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+.Info-common-address-attr {
+    text-decoration-line: none !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 14px !important;
+}

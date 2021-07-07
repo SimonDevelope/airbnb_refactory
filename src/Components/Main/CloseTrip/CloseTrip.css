@@ -1,0 +1,65 @@
+.Close-area-total-wrapper {
+    padding: 0 80px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+}
+.Close-inner-contents-outter-wrapper {
+    display: grid !important;
+    grid-template-rows: repeat(2, 70px) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 15px 15px !important;
+    padding: 20px 0 !important;
+}
+.Close-title-total-wrapper {
+    margin: 32px 0 !important;
+    display: block !important;
+}
+.Close-title-word-attr {
+    font-size: 34px !important;
+    font-weight: 600 !important;
+    display: block !important;
+}
+.Image-N-word-total-attr {
+    position: relative !important;
+    display: block !important;
+}
+.Close-common-image-attr {
+    object-fit: cover !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+}
+.Close-address-common-wrapper {
+    display: flex !important;
+    width: fit-content !important;
+    height: 100% !important;
+    text-decoration-line: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+.Close-image-Common-attr {
+    display: block !important;
+    margin-right: 15px !important;
+}
+.Close-explain-common-area-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.Close-explain-common-outter-wrapper {
+    display: block !important;
+    position: relative !important;
+    align-items: flex-end !important;
+}
+.Location-word-total-attr {
+    display: block !important;
+    width: 100% !important;
+    font-weight: 600 !important;
+}
+.Location-word-content-attr {
+    display: block !important;
+    width: 100% !important;
+}

@@ -1,0 +1,61 @@
+.Wisdom-total-wrapper {
+    padding: 0 80px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+}
+.Wisdom-title-total-wrapper {
+    margin: 32px 0 !important;
+    display: block !important;
+    padding-bottom: 24px !important;
+}
+.Wisdom-image-outter-wrapper {
+    height: 460px !important;
+    width: 100% !important;
+    display: block !important;
+    position: relative !important;
+}
+.Wisdom-image-attr {
+    border-radius: 18px !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+.Wisdom-word-total-attr {
+    padding: 0 80px !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+}
+.Wisdom-word-attr-A{
+    display: block !important;
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    color: rgb(0, 0, 0) !important;
+    margin: 15px 0 !important;
+}
+.Wisdom-word-attr-B{
+    display: block !important;
+    font-size: 18px !important;
+    color: rgb(0, 0, 0) !important;
+    margin-bottom: 15px !important;
+}
+.Wisdom-word-attr-C{
+    display: flex !important;
+    width: 170px !important;
+    height: 50px !important;
+    border-radius: 8px !important;
+    background:rgb(0, 0, 0) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 15px !important;
+    margin: 15px 0 !important;
+    color: rgb(255, 255, 255) !important;
+  
+}
+.Wisdom-word-attr-D{
+    display: block !important;
+    font-weight: 600 !important;
+}
