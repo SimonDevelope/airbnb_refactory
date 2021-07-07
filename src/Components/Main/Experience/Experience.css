@@ -1,0 +1,52 @@
+.Experience-total-wrapper {
+    padding: 0 80px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+}
+.Experience-title-total-wrapper {
+    display: block !important;
+    padding-bottom: 24px !important;
+}
+.Experience-word-anoth-attr {
+    font-size: 26px !important;
+    font-weight: 400 !important;
+}
+.Experience-word-total-attr {
+    font-size: 34px !important;
+    font-weight: 600 !important;
+    display: block !important;
+}
+.Experience-total-common-attr {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+}
+.Experience-contents-title-outter-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 10px !important;
+}
+.Experience-common-attr-A {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.Experience-common-attr-B {
+    font-size: 14px !important;
+}
+.Experience-contents-total-inner-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+    display: grid !important;
+    grid-template-rows: repeat(1, 100%) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px 15px !important;
+    padding-bottom: 80px !important;
+}
+.Expereince-contents-last-wrapper {
+    display: block !important;
+    text-decoration-line: none !important;
+    color: rgb(0, 0, 0) !important;
+    width: 100% !important;
+    height: 100% !important;
+}

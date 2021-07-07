@@ -1,0 +1,56 @@
+.Hosting-total-warpper {
+    padding: 0 80px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+}
+.Hosting-total-inner-wrapper {
+    display: block !important;
+    margin: 32px 0 !important;
+    width: 100% !important;
+    height: 470px !important;
+}
+.Hosting-image-attr {
+    border-radius: 15px !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+.Hosting-word-total-wrapper {
+    padding: 0 80px !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+    text-decoration-line: none !important;
+}
+.Hosting-word-attr-A {
+    display: block !important;
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    color: rgb(255, 255, 255) !important;
+    margin: 15px 0 !important;
+}
+.Hosting-word-attr-B {
+    display: block !important;
+    font-size: 18px !important;
+    color: rgb(255, 255, 255) !important;
+    margin-bottom: 15px !important;
+}
+.Hosting-word-attr-C {
+    display: flex !important;
+    width: 150px !important;
+    height: 50px !important;
+    border-radius: 8px !important;
+    background:rgb(255, 255, 255) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 15px !important;
+    margin: 15px 0 !important;
+}
+.Hosting-word-attr-D {
+    display: block !important;
+    color: rgb(0, 0, 0) !important;
+}

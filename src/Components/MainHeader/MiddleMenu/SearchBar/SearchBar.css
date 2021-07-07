@@ -4,9 +4,9 @@
     color: #222222 !important;
     display: flex !important;
     height: 66px !important;
-    position: relative !important;
-    width: 100% !important;
-    background: transparent !important;
+    position: absolute !important;
+    left: 100px !important;
+    background: #FFFFFF !important;
 }
 .Total-inner-wrapper {
     display: flex !important;
@@ -56,7 +56,6 @@
 }
 .Check-in-N-out-outter-wrapper {
     display: flex !important;
-    min-width: 0 !important;
     flex: 1 1 0% !important;
     position: relative !important;
 }
@@ -153,12 +152,11 @@
 }
 .Svg-attr {
     display: inline-block !important;
-    fill: white !important;
     height: 16px !important;
     width: 16px !important;
     overflow: visible !important;
     stroke-width: 4 !important;
-    /* color: #FFFFFF !important; */
+    fill: rgb(255, 255, 255) !important;
 }
 .Location-search-total-wrapper {
     flex: 1 0 0% !important;

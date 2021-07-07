@@ -1,5 +1,6 @@
 .Logo-total-area {
     flex: 1 0 140px !important;
+    z-index: 1 !important;
 }
 .Logo-boundary-area {
     display: inline-flex !important;
@@ -21,9 +22,11 @@
 }
 .Logo-outter-wrapper {
     display: block !important;
+    color: #FFFFFF !important;
 }
 .Logo-word-wrapper {
     display: block !important;
     width: 102px !important;
     height: 32px !important;
+    fill:rgb(255,255,255) !important;
 }

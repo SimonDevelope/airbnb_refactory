@@ -35,8 +35,8 @@ function MiddleMenu () {
     return(
         <div className='Middle-menu-outter-wrapper'>
             <div className='Middle-inner-contents-wrapper'>
-                <div>
-                    <div>
+                <div className='Form-outter-wrapper'>
+                    <div className='Form-inner-wrapper'>
                         <form className='Middle-inner-area-attr'>
                             <fieldset className='Middle-inner-contents-area'>
                                 <div className='Middle-menu-list'>

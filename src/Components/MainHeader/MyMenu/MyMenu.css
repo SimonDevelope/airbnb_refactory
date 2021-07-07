@@ -1,7 +1,12 @@
 .Right-menu-total-wrapper {
-    display: flex !important;
+
     flex: 1 0 140px !important;
     align-items: center !important;
+    z-index: 1 !important;
+}
+.Mymenu-icons-wrapper {
+    display: flex !important;
+    z-index: 1 !important;
     position: relative !important;
 }
 .Left-container-wrapper {
@@ -9,25 +14,28 @@
     position: relative !important;
     justify-content: flex-end;
     align-items: center;
+    padding-left: 10px !important;
     width: 100% !important;
 }
 .To-be-host-address-outter-wrapper {
+    display: block !important;
     position:relative !important;
-    align-items: center !important;
-    justify-content: center !important;
     padding: 0 8px !important;
+    min-width: 0 !important;
 }
 .To-be-host-address-wrapper {
-    text-decoration-line: none !important;
     font-size: 14px !important;
     font-weight: 600 !important;
-    display: inline-block !important;
+    display: block !important;
     position:relative !important;
-    justify-content: center !important;
+    align-items: center !important;
+    min-width: 0 !important;
 }
 .To-be-host-word-attr {
-    color: #222222 !important;
-    display: inline-block !important;
+    color:rgb(255,255,255) !important;
+    display: block !important;
+    padding-left: 70px !important;
+    min-width: 0 !important;
 }
 
 .Icon-container-btn-attr {
@@ -41,7 +49,7 @@
     cursor: pointer !important;
 }
 .World-Icon-Total-wrapper {
-    display: inline-block !important;
+    display: block !important;
     width: 40px !important;
     height: 40px !important;
     align-items: center !important;
@@ -56,6 +64,7 @@
     height: 40px !important;
     cursor: pointer !important;
     position:relative !important;
+    display: block !important;
 }
 .Icon-container-wrapper {
     width: 80px !important;
@@ -81,7 +90,7 @@
     display: block !important;
     height: 16px !important;
     width: 16px !important;
-    fill: currentcolor !important;
+    fill:rgb(255,255,255) !important;
 }
 .Svg-icon-container-style-hamburger {
     display: block !important;
