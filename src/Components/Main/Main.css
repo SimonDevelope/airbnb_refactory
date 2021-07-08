@@ -1,5 +1,5 @@
 .Total-Main-wrapper {
-    display: inline-block !important;
-    margin: 0 auto !important;
-    min-height: 100vh !important;
+  display: inline-block;
+  margin: 0 auto;
+  min-height: 100vh;
 }

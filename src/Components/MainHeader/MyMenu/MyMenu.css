@@ -1,109 +1,108 @@
 .Right-menu-total-wrapper {
-
-    flex: 1 0 140px !important;
-    align-items: center !important;
-    z-index: 1 !important;
+  flex: 1 0 140px;
+  align-items: center;
+  z-index: 1;
 }
 .Mymenu-icons-wrapper {
-    display: flex !important;
-    z-index: 1 !important;
-    position: relative !important;
+  display: flex;
+  z-index: 1;
+  position: relative;
 }
 .Left-container-wrapper {
-    display: flex !important;
-    position: relative !important;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 10px !important;
-    width: 100% !important;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
 }
 .To-be-host-address-outter-wrapper {
-    display: block !important;
-    position:relative !important;
-    padding: 0 8px !important;
-    min-width: 0 !important;
+  display: block;
+  position: relative;
+  padding: 0 8px;
+  min-width: 0;
 }
 .To-be-host-address-wrapper {
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    display: block !important;
-    position:relative !important;
-    align-items: center !important;
-    min-width: 0 !important;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  align-items: center;
+  min-width: 0;
 }
 .To-be-host-word-attr {
-    color:rgb(255,255,255) !important;
-    display: block !important;
-    padding-left: 70px !important;
-    min-width: 0 !important;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding-left: 70px;
+  min-width: 0;
 }
 
 .Icon-container-btn-attr {
-    width: 75px !important;
-    height: 40px !important;
-    display: flex !important;
-    border-radius: 30px !important;
-    border: 1px solid #DDDDDD !important;
-    background: #FFFFFF !important;
-    align-items: center !important;
-    cursor: pointer !important;
+  width: 75px;
+  height: 40px;
+  display: flex;
+  border-radius: 30px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  align-items: center;
+  cursor: pointer;
 }
 .World-Icon-Total-wrapper {
-    display: block !important;
-    width: 40px !important;
-    height: 40px !important;
-    align-items: center !important;
-    position: relative !important;
-    padding-right: 8px !important;
-    margin: 0 !important;
+  display: block;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  position: relative;
+  padding-right: 8px;
+  margin: 0;
 }
 .World-icon-inner-wrapper {
-    background: transparent !important;
-    border: none !important;
-    width: 40px !important;
-    height: 40px !important;
-    cursor: pointer !important;
-    position:relative !important;
-    display: block !important;
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  display: block;
 }
 .Icon-container-wrapper {
-    width: 80px !important;
-    height: 50px !important;
-    display: flex !important;
-    align-items: center !important;
-    position: relative !important;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .Hamberger-icon-wrapper {
-    display: inline-block !important;
-    width: 16px !important;
-    height: 16px !important;
-    padding-left: 5px !important;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding-left: 5px;
 }
 .People-icon-wrapper {
-    display: inline-block !important;
-    width: 30px !important;
-    height: 30px !important;
-    justify-content: center !important;
-    padding-left: 10px !important;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  padding-left: 10px;
 }
 .Svg-style {
-    display: block !important;
-    height: 16px !important;
-    width: 16px !important;
-    fill:rgb(255,255,255) !important;
+  display: block;
+  height: 16px;
+  width: 16px;
+  fill: rgb(255, 255, 255);
 }
 .Svg-icon-container-style-hamburger {
-    display: block !important;
-    fill: none !important;
-    height: 16px !important;
-    width: 16px !important;
-    stroke: currentcolor !important;
-    stroke-width: 3 !important;
-    overflow: visible !important;
+  display: block;
+  fill: none;
+  height: 16px;
+  width: 16px;
+  stroke: currentcolor;
+  stroke-width: 3;
+  overflow: visible;
 }
 .Svg-icon-container-style-people {
-    display: block !important;
-    height: 30px !important;
-    width: 30px !important;
-    color: #78787878 !important;
+  display: block;
+  height: 30px;
+  width: 30px;
+  color: #78787878;
 }

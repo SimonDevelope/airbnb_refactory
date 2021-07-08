@@ -1,32 +1,31 @@
 .Logo-total-area {
-    flex: 1 0 140px !important;
-    z-index: 1 !important;
+  flex: 1 0 140px;
+  z-index: 1;
 }
 .Logo-boundary-area {
-    display: inline-flex !important;
-    align-items: center !important;
-    vertical-align: middle !important;
-    height: 80px !important;
-    width: 102px !important;
-    position: relative !important;
-
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  height: 80px;
+  width: 102px;
+  position: relative;
 }
 .Logo-boundary-area::before {
-    position: absolute !important;
-    top: 8px !important;
-    left: -8px !important;
-    right: -8px !important;
-    bottom: 8px !important;
-    display: inline-block !important;
-    box-sizing: border-box !important;
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  right: -8px;
+  bottom: 8px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 .Logo-outter-wrapper {
-    display: block !important;
-    color: #FFFFFF !important;
+  display: block;
+  color: #ffffff;
 }
 .Logo-word-wrapper {
-    display: block !important;
-    width: 102px !important;
-    height: 32px !important;
-    fill:rgb(255,255,255) !important;
+  display: block;
+  width: 102px;
+  height: 32px;
+  fill: rgb(255, 255, 255);
 }

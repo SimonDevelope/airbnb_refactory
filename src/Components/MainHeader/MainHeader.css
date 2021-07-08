@@ -1,8 +1,8 @@
 .Header-area-attr {
-    padding: 0 80px !important;
-    height: 80px !important;
-    display: flex !important;
-    align-items: center !important;
-    position: relative !important;
-    margin: 0 auto !important;
+  padding: 0 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
 }

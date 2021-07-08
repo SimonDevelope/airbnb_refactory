@@ -1,14 +1,12 @@
 /* Common Total Components Attributes */
 
 .div {
-  display: block !important;
-  box-sizing: border-box !important;
+  display: block;
+  box-sizing: border-box;
 }
 :root {
-  max-width:1760px !important;
+  max-width: 1760px;
 }
 .Total-view-attr {
-  position: relative !important;
-  
+  position: relative;
 }
-

@@ -1,10 +1,8 @@
 import React from 'react';
-import './Policy.css'
+import './Policy.css';
 
-function Policy () {
-    return(
-        <div></div>
-    );
+function Policy() {
+  return <div></div>;
 }
 
 export default Policy;
