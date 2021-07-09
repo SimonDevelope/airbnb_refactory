@@ -1,5 +1,4 @@
 .Right-menu-total-wrapper {
-  flex: 1 0 140px;
   align-items: center;
   z-index: 1;
 }
@@ -13,7 +12,6 @@
   position: relative;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 10px;
   width: 100%;
 }
 .To-be-host-address-outter-wrapper {
@@ -33,7 +31,6 @@
 .To-be-host-word-attr {
   color: rgb(255, 255, 255);
   display: block;
-  padding-left: 70px;
   min-width: 0;
 }
 

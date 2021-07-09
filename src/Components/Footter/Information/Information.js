@@ -1,5 +1,6 @@
 import React from 'react';
 import './Information.css';
+import Policy from '../Policy/Policy';
 
 function Info() {
   return (
@@ -161,7 +162,7 @@ function Info() {
           </ul>
         </div>
       </div>
-      <div></div>
+      <Policy />
     </div>
   );
 }

@@ -3,14 +3,14 @@
   padding: 0 24px;
   min-width: 348px;
   flex: 0 1 auto;
+  height: 100%;
 }
 .Middle-inner-contents-wrapper {
-  padding: 0 24px;
   position: absolute;
-  width: 100%;
-  left: 0;
   top: 0;
+  left: 0;
   z-index: 1;
+  width: 100%;
 }
 .Form-outter-wrapper {
   position: relative;
@@ -24,12 +24,10 @@
   margin: 0;
   padding: 0;
   border: 0;
-  position: relative;
 }
 .Middle-inner-area-attr {
   margin: 0 auto;
   max-width: 850px;
-  position: relative;
 }
 .Middle-menu-list {
   display: flex;
