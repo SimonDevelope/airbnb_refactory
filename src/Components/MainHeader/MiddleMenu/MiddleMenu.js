@@ -1,34 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MiddleMenu.css';
-import { Lodge } from './SearchBar/SearchBar';
-
-export const MenuList = ({ content }) => {
-  return (
-    <>
-      <label>
-        <input className="Menu-btn-atr" type="radio"></input>
-        <span className="Name-wrapper">{content.name}</span>
-      </label>
-    </>
-  );
-};
+import { Lodge, Experience } from './SearchBar/SearchBar';
 
 function MiddleMenu() {
-  const contents = [
-    {
-      id: 1,
-      name: '숙소',
-    },
-    {
-      id: 2,
-      name: '체험',
-    },
-    {
-      id: 3,
-      name: '온라인 체험',
-    },
-  ];
+  const [state, setState] = useState(() => {
+    return <Lodge />;
+  });
 
+  const LodgeView = () => {
+    setState(() => {
+      return <Lodge />;
+    });
+  };
+
+  // 체험버튼 클릭 시
+  const ExperienceView = () => {
+    setState(() => {
+      return <Experience />;
+    });
+  };
   return (
     <div className="Middle-menu-outter-wrapper">
       <div className="Middle-inner-contents-wrapper">
@@ -37,12 +27,29 @@ function MiddleMenu() {
             <form className="Middle-inner-area-attr">
               <fieldset className="Middle-inner-contents-area">
                 <div className="Middle-menu-list">
-                  {contents.map((content) => (
-                    <MenuList content={content} />
-                  ))}
+                  <label>
+                    <input
+                      className="Menu-btn-atr"
+                      type="radio"
+                      onClick={LodgeView}
+                    ></input>
+                    <span className="Name-wrapper">숙소</span>
+                  </label>
+                  <label>
+                    <input
+                      className="Menu-btn-atr"
+                      type="radio"
+                      onClick={ExperienceView}
+                    ></input>
+                    <span className="Name-wrapper">체험</span>
+                  </label>
+                  <label>
+                    <input className="Menu-btn-atr" type="radio"></input>
+                    <span className="Name-wrapper">온라인 체험</span>
+                  </label>
                 </div>
               </fieldset>
-              <Lodge />
+              <div>{state}</div>
             </form>
           </div>
         </div>

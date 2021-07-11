@@ -124,6 +124,8 @@
   margin-left: -6px;
   padding-right: 9px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .Main-btn-inner-wrapper {
   position: relative;
@@ -172,6 +174,7 @@
 .Date-time-outter-wrapper {
   align-items: center;
   display: flex;
+  flex: 1 1 0%;
   min-width: 0;
   position: relative;
 }
