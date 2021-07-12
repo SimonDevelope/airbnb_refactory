@@ -1,0 +1,87 @@
+.setting-total-outter-area {
+  position: absolute;
+  right: 80px;
+  top: 70px;
+  width: 240px;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 8px;
+  z-index: 1;
+}
+.setting-total-inner-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 14px;
+  height: 100%;
+}
+.setting-partition-attr {
+  border-bottom: 1px solid #dddddd;
+}
+.setting-sign-up-btn-attr {
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  background: none;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+
+.setting-sign-in-wrapper {
+  font-size: 14px;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+}
+.setting-sign-in-btn-attr {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  display: flex;
+  background: none;
+  cursor: pointer;
+}
+.setting-toBeHost-btn-attr {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  display: flex;
+  background: none;
+  cursor: pointer;
+}
+.setting-experienceHosting-btn-attr {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  display: flex;
+  background: none;
+  cursor: pointer;
+}
+.setting-advise-btn-attr {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  display: flex;
+  background: none;
+  cursor: pointer;
+}
+.setting-toBeHost-wrapper {
+  font-size: 14px;
+  border: none;
+  background: none;
+  width: 100%;
+}
+.setting-experienceHosting-wrapper {
+  font-size: 14px;
+  border: none;
+  background: none;
+  width: 100%;
+}
+.setting-advise-wrapper {
+  font-size: 14px;
+  border: none;
+  background: none;
+  width: 100%;
+}

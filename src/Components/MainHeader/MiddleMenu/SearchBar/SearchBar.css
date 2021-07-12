@@ -1,3 +1,7 @@
+.flexible-search-total-wrapper {
+  width: 100%;
+  height: 100%;
+}
 .Total-outter-wrapper {
   border: 1px solid #dddddd;
   border-radius: 32px;
@@ -177,4 +181,7 @@
   flex: 1 1 0%;
   min-width: 0;
   position: relative;
+}
+.location-on-button-attr {
+  position: absolute;
 }

@@ -1,9 +1,11 @@
 import './SearchBar.css';
 import Box from '../Function/FlexibleSearch/Flexible';
 import Add from '../Function/NOP/Nop';
-import { useState } from 'react';
+import CalenderModal from '../Function/Calender/Calender';
+import { useEffect, useRef, useState } from 'react';
 
 export const Lodge = () => {
+  const el = useRef();
   const [search, setSearch] = useState(false);
   const onToggle = () => {
     setSearch((search) => !search);
@@ -12,6 +14,25 @@ export const Lodge = () => {
   const onButton = () => {
     setAdd((add) => !add);
   };
+  const [calender, setCalender] = useState(false);
+  const onCalender = () => {
+    setCalender((calender) => !calender);
+  };
+  const closedModal = (e) => {
+    if (el.current && !el.current.contains(e.target)) {
+      setSearch(false);
+      setAdd(false);
+      setCalender(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('mousedown', closedModal);
+    return () => {
+      window.removeEventListener('mousedown', closedModal);
+    };
+  }, []);
+
   return (
     <>
       <div className="Total-outter-wrapper">
@@ -33,7 +54,7 @@ export const Lodge = () => {
           <div className="Check-in-N-out-outter-wrapper">
             <div className="Check-in-outter-wrapper">
               <div type="button" className="Check-in-inner-wrapper">
-                <div className="Check-in-contents-wrapper">
+                <div className="Check-in-contents-wrapper" onClick={onCalender}>
                   <div className="Common-title-font-attr">체크인</div>
                   <div className="Common-content-font-attr">날짜 입력</div>
                 </div>
@@ -42,7 +63,7 @@ export const Lodge = () => {
             <div className="Partition-attr"></div>
             <div className="Check-out-outter-wrapper">
               <div type="button" className="Check-in-inner-wrapper">
-                <div className="Check-in-contents-wrapper">
+                <div className="Check-in-contents-wrapper" onClick={onCalender}>
                   <div className="Common-title-font-attr">체크아웃</div>
                   <div className="Common-content-font-attr">날짜 입력</div>
                 </div>
@@ -77,8 +98,13 @@ export const Lodge = () => {
           </div>
         </div>
       </div>
-      <div className="location-on-button-attr">{search ? <Box /> : ''}</div>
-      <div className="Nop-on-button-attr">{add ? <Add /> : ''}</div>
+      <div className="location-on-button-attr" ref={el}>
+        {search && <Box />}
+      </div>
+      <div className="nop-on-button-attr" ref={el}>
+        {add && <Add />}
+      </div>
+      <div ref={el}>{calender && <CalenderModal />}</div>
     </>
   );
 };

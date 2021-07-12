@@ -22,23 +22,16 @@ function Add() {
             </div>
           </div>
           <div className="nop-modal-cal-area">
-            <button
-              className="nop-minus-btn-attr"
-              type="button"
-              onClick={onDecrease}
-            >
+            <button className="nop-minus-btn-attr" onClick={onDecrease}>
               ﹣
             </button>
             <div className="nop-number-area-attr">{number}</div>
-            <button
-              className="nop-plus-btn-attr"
-              type="button"
-              onClick={onIncrease}
-            >
+            <button className="nop-plus-btn-attr" onClick={onIncrease}>
               ＋
             </button>
           </div>
         </div>
+        <div className="nop-modal-age-partition"></div>
         <div className="nop-modal-adult-area">
           <div>
             <div className="nop-specific-title-attr">
@@ -49,23 +42,16 @@ function Add() {
             </div>
           </div>
           <div className="nop-modal-cal-area">
-            <button
-              className="nop-minus-btn-attr"
-              type="button"
-              onClick={onDecrease}
-            >
+            <button className="nop-minus-btn-attr" type="button">
               ﹣
             </button>
             <div className="nop-number-area-attr">{number}</div>
-            <button
-              className="nop-plus-btn-attr"
-              type="button"
-              onClick={onIncrease}
-            >
+            <button className="nop-plus-btn-attr" type="button">
               ＋
             </button>
           </div>
         </div>
+        <div className="nop-modal-age-partition"></div>
         <div className="nop-modal-adult-area">
           <div>
             <div className="nop-specific-title-attr">
