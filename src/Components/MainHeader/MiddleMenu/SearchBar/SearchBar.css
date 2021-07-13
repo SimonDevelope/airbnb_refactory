@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
 }
-.Total-outter-wrapper {
+.total-outter-wrapper {
   border: 1px solid #dddddd;
   border-radius: 32px;
   color: #222222;
@@ -12,28 +12,28 @@
   width: 100%;
   background: #ffffff;
 }
-.Total-inner-wrapper {
+.total-inner-wrapper {
   display: flex;
   flex: 1 1 0%;
   height: 100%;
   min-width: 0;
 }
-.Location-total-wrapper {
+.location-total-wrapper {
   min-width: 0;
   display: flex;
   position: relative;
 }
-.Inner-contents-wrapper {
+.inner-contents-wrapper {
   cursor: pointer;
   display: block;
   border: 1px solid transparent;
   min-width: 0;
   padding: 14px 32px;
 }
-.Inner-contents-attr {
+.inner-contents-attr {
   position: relative;
 }
-.Inner-word-attr {
+.inner-word-attr {
   text-align: left;
   font-size: 12px;
   line-height: 16px;
@@ -53,23 +53,23 @@
   color: #222222;
   text-overflow: ellipsis;
 }
-.Partition-attr {
+.partition-attr {
   align-self: center;
   border-right: 1px solid #dddddd;
   height: 32px;
 }
-.Check-in-N-out-outter-wrapper {
+.check-in-N-out-outter-wrapper {
   display: flex;
   flex: 1 1 0%;
   position: relative;
 }
-.Check-in-outter-wrapper {
+.check-in-outter-wrapper {
   position: relative;
   display: center;
   align-items: center;
   width: 100%;
 }
-.Check-in-inner-wrapper {
+.check-in-inner-wrapper {
   border: 0;
   cursor: pointer;
   font-size: inherit;
@@ -77,31 +77,31 @@
   overflow: visible;
   text-align: left;
 }
-.Check-in-contents-wrapper {
+.check-in-contents-wrapper {
   padding: 14px 24px;
   overflow: hidden;
   position: relative;
 }
-.Common-title-font-attr {
+.common-title-font-attr {
   font-size: 12px;
   line-height: 16px;
   font-weight: 600;
   padding-bottom: 3px;
 }
-.Common-content-font-attr {
+.common-content-font-attr {
   font-size: 14px;
   line-height: 18px;
   color: #717171;
   font-weight: 400;
   width: 100%;
 }
-.Check-out-outter-wrapper {
+.check-out-outter-wrapper {
   position: relative;
   display: center;
   align-items: center;
   width: 100%;
 }
-.Check-in-inner-wrapper {
+.check-in-inner-wrapper {
   border: 0;
   cursor: pointer;
   font-size: inherit;
@@ -109,12 +109,12 @@
   overflow: visible;
   text-align: left;
 }
-.NOP-outter-wrapper {
+.search-nop-outter-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-.NOP-inner-wrapper {
+.search-nop-inner-wrapper {
   border: 0;
   cursor: pointer;
   font-size: inherit;
@@ -124,14 +124,14 @@
   display: flex;
   flex: 1 0 0%;
 }
-.Main-btn-outter-wrapper {
+.main-btn-outter-wrapper {
   margin-left: -6px;
   padding-right: 9px;
   position: relative;
   display: flex;
   align-items: center;
 }
-.Main-btn-inner-wrapper {
+.main-btn-inner-wrapper {
   position: relative;
   background: #ff385c;
   border: 0;
@@ -148,34 +148,27 @@
   z-index: 0;
   border-radius: 24px;
 }
-.Modify-Icon-outter-wrapper {
+.modify-Icon-outter-wrapper {
   display: inline-block;
   padding: 16px;
   position: relative;
   color: #ffffff;
 }
-.Svg-attr {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  overflow: visible;
-  stroke-width: 4;
-  fill: rgb(255, 255, 255);
-}
-.Location-search-total-wrapper {
+
+.location-search-total-wrapper {
   flex: 1 0 0%;
 }
-.Modify-Icon-inner-wrapper {
+.modify-Icon-inner-wrapper {
   color: #ffffff;
   display: inline-block;
 }
-.Location-search-inner-wrapper {
+.location-search-inner-wrapper {
   position: relative;
   align-items: center;
   display: flex;
   min-width: 0;
 }
-.Date-time-outter-wrapper {
+.date-time-outter-wrapper {
   align-items: center;
   display: flex;
   flex: 1 1 0%;

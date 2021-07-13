@@ -10,7 +10,7 @@ import Hosting from './StartHosting/StartHosting';
 
 function Main() {
   return (
-    <main className="Total-Main-wrapper">
+    <main className="total-Main-wrapper">
       <Background />
       <Word />
       <Close />

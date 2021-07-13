@@ -1,18 +1,18 @@
-.Live-total-wrapper {
+.live-total-wrapper {
   padding: 0 80px;
   margin: 0 auto;
   position: relative;
 }
-.Live-title-total-wrapper {
+.live-title-total-wrapper {
   margin: 32px 0;
   display: block;
 }
-.Live-content-word-attr {
+.live-content-word-attr {
   font-size: 34px;
   font-weight: 600;
   display: block;
 }
-.Live-contents-total-outter-wrapper {
+.live-contents-total-outter-wrapper {
   width: 100%;
   height: 100%;
   display: grid;
@@ -20,22 +20,22 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 15px 15px;
 }
-.Live-common-total-outter-attr {
+.live-common-total-outter-attr {
   display: block;
   text-decoration-line: none;
   color: rgb(0, 0, 0);
 }
-.Live-common-images-attr {
+.live-common-images-attr {
   width: 100%;
   border-radius: 8px;
 }
-.Live-common-total-title-attr {
+.live-common-total-title-attr {
   margin: 15px 0;
   display: block;
   font-size: 18px;
   font-weight: 600;
 }
-.Live-common-total-contents-attr {
+.live-common-total-contents-attr {
   display: block;
   width: fit-content;
 }

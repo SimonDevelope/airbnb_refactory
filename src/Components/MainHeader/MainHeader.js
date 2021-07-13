@@ -6,7 +6,7 @@ import RightMenu from './MyMenu/MyMenu';
 
 function Header() {
   return (
-    <header className="Header-area-attr">
+    <header className="header-area-attr">
       <Logo />
       <MiddleMenu />
       <RightMenu />

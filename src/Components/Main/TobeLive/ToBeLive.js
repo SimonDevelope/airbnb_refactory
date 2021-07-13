@@ -3,17 +3,17 @@ import './ToBeLive.css';
 
 export const LiveContents = ({ content }) => {
   return (
-    <a href="/" className="Live-common-total-outter-attr">
+    <a href="/" className="live-common-total-outter-attr">
       <div>
         <source srcSet={content.source}></source>
         <img
           src={content.src}
           alt={content.src}
-          className="Live-common-images-attr"
+          className="live-common-images-attr"
         ></img>
       </div>
-      <div className="Live-common-total-title-attr">
-        <span className="Live-common-total-contents-attr">{content.title}</span>
+      <div className="live-common-total-title-attr">
+        <span className="live-common-total-contents-attr">{content.title}</span>
       </div>
     </a>
   );
@@ -52,13 +52,13 @@ function Live() {
   ];
 
   return (
-    <div className="Live-total-wrapper">
-      <div className="Live-title-total-wrapper">
-        <span className="Live-content-word-attr">
+    <div className="live-total-wrapper">
+      <div className="live-title-total-wrapper">
+        <span className="live-content-word-attr">
           어디에서나, 여행은 살아보는 거야!
         </span>
       </div>
-      <div className="Live-contents-total-outter-wrapper">
+      <div className="live-contents-total-outter-wrapper">
         {contents.map((content) => (
           <LiveContents content={content} />
         ))}

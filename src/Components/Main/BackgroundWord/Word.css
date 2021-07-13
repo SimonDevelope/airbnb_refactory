@@ -1,4 +1,4 @@
-.Word-total-wrapper {
+.word-total-wrapper {
   height: 720px;
   padding: 0 80px;
   position: relative;
@@ -11,19 +11,19 @@
   align-items: center;
   justify-content: center;
 }
-.Background-outter-word-attr {
+.background-outter-word-attr {
   font-size: 18px;
   font-weight: 600;
 }
-.Background-inner-word-attr {
+.background-inner-word-attr {
   color: rgb(0, 0, 0);
   display: block;
   padding-bottom: 10px;
 }
-.Inner-btn-outter-wrapper {
+.inner-btn-outter-wrapper {
   margin-top: 15px;
 }
-.Inner-btn-wrapper {
+.inner-btn-wrapper {
   width: 200px;
   height: 70px;
   border-radius: 35px;

@@ -1,27 +1,27 @@
-.Right-menu-total-wrapper {
+.right-menu-total-wrapper {
   display: flex;
   align-items: center;
   z-index: 1;
 }
-.Mymenu-icons-wrapper {
+.mymenu-icons-wrapper {
   display: flex;
   z-index: 1;
   position: relative;
 }
-.Left-container-wrapper {
+.left-container-wrapper {
   display: flex;
   position: relative;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
-.To-be-host-address-outter-wrapper {
+.to-be-host-address-outter-wrapper {
   display: block;
   position: relative;
   padding: 0 8px;
   min-width: 0;
 }
-.To-be-host-address-wrapper {
+.to-be-host-address-wrapper {
   font-size: 14px;
   font-weight: 600;
   display: block;
@@ -29,13 +29,13 @@
   align-items: center;
   min-width: 0;
 }
-.To-be-host-word-attr {
+.to-be-host-word-attr {
   color: rgb(255, 255, 255);
   display: block;
   min-width: 0;
 }
 
-.Icon-container-btn-attr {
+.icon-container-btn-attr {
   width: 75px;
   height: 40px;
   display: flex;
@@ -45,62 +45,39 @@
   align-items: center;
   cursor: pointer;
 }
-.World-Icon-Total-wrapper {
+.world-icon-total-wrapper {
   display: block;
-  width: 40px;
   height: 40px;
   align-items: center;
   position: relative;
   padding-right: 8px;
   margin: 0;
 }
-.World-icon-inner-wrapper {
+.world-icon-inner-wrapper {
   background: transparent;
   border: none;
-  width: 40px;
   height: 40px;
   cursor: pointer;
   position: relative;
   display: block;
 }
-.Icon-container-wrapper {
+.icon-container-wrapper {
   width: 80px;
   height: 50px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.Hamberger-icon-wrapper {
+.hamberger-icon-wrapper {
   display: inline-block;
   width: 16px;
   height: 16px;
   padding-left: 5px;
 }
-.People-icon-wrapper {
+.people-icon-wrapper {
   display: inline-block;
   width: 30px;
   height: 30px;
   justify-content: center;
   padding-left: 10px;
-}
-.Svg-style {
-  display: block;
-  height: 16px;
-  width: 16px;
-  fill: rgb(255, 255, 255);
-}
-.Svg-icon-container-style-hamburger {
-  display: block;
-  fill: none;
-  height: 16px;
-  width: 16px;
-  stroke: currentcolor;
-  stroke-width: 3;
-  overflow: visible;
-}
-.Svg-icon-container-style-people {
-  display: block;
-  height: 30px;
-  width: 30px;
-  color: #78787878;
 }

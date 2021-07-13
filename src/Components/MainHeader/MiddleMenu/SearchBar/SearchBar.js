@@ -3,44 +3,48 @@ import Box from '../Function/FlexibleSearch/Flexible';
 import Add from '../Function/NOP/Nop';
 import CalenderModal from '../Function/Calender/Calender';
 import { useEffect, useRef, useState } from 'react';
+import { ModifyIconLogo } from '../../MainheaderSvg/MainHeaderSvg';
 
 export const Lodge = () => {
-  const el = useRef();
-  const [search, setSearch] = useState(false);
-  const onToggle = () => {
-    setSearch((search) => !search);
+  const rangeOfapplicSelect = useRef();
+  const [showSearch, setShowSearch] = useState(false);
+  const searchToggle = () => {
+    setShowSearch((showsearch) => !showsearch);
   };
-  const [add, setAdd] = useState(false);
-  const onButton = () => {
-    setAdd((add) => !add);
+  const [showAddNop, setShowAddNop] = useState(false);
+  const addNopToggle = () => {
+    setShowAddNop((add) => !add);
   };
   const [calender, setCalender] = useState(false);
-  const onCalender = () => {
+  const calenderToggle = () => {
     setCalender((calender) => !calender);
   };
   const closedModal = (e) => {
-    if (el.current && !el.current.contains(e.target)) {
-      setSearch(false);
-      setAdd(false);
+    if (
+      rangeOfapplicSelect.current &&
+      !rangeOfapplicSelect.current.contains(e.target)
+    ) {
+      setShowSearch(false);
+      setShowAddNop(false);
       setCalender(false);
     }
   };
 
   useEffect(() => {
-    window.addEventListener('mousedown', closedModal);
+    document.addEventListener('mousedown', closedModal);
     return () => {
-      window.removeEventListener('mousedown', closedModal);
+      document.removeEventListener('mousedown', closedModal);
     };
   }, []);
 
   return (
     <>
-      <div className="Total-outter-wrapper">
-        <div className="Total-inner-wrapper">
-          <div className="Location-total-wrapper">
-            <label className="Inner-contents-wrapper">
-              <div className="Inner-contents-attr" onClick={onToggle}>
-                <div className="Inner-word-attr" type="button">
+      <div className="total-outter-wrapper">
+        <div className="total-inner-wrapper">
+          <div className="location-total-wrapper">
+            <label className="inner-contents-wrapper">
+              <div className="inner-contents-attr" onClick={searchToggle}>
+                <div className="inner-word-attr" type="button">
                   위치
                 </div>
                 <input
@@ -50,47 +54,45 @@ export const Lodge = () => {
               </div>
             </label>
           </div>
-          <div className="Partition-attr"></div>
-          <div className="Check-in-N-out-outter-wrapper">
-            <div className="Check-in-outter-wrapper">
-              <div type="button" className="Check-in-inner-wrapper">
-                <div className="Check-in-contents-wrapper" onClick={onCalender}>
-                  <div className="Common-title-font-attr">체크인</div>
-                  <div className="Common-content-font-attr">날짜 입력</div>
+          <div className="partition-attr"></div>
+          <div className="check-in-N-out-outter-wrapper">
+            <div className="check-in-outter-wrapper">
+              <div type="button" className="check-in-inner-wrapper">
+                <div
+                  className="check-in-contents-wrapper"
+                  onClick={calenderToggle}
+                >
+                  <div className="common-title-font-attr">체크인</div>
+                  <div className="common-content-font-attr">날짜 입력</div>
                 </div>
               </div>
             </div>
-            <div className="Partition-attr"></div>
-            <div className="Check-out-outter-wrapper">
-              <div type="button" className="Check-in-inner-wrapper">
-                <div className="Check-in-contents-wrapper" onClick={onCalender}>
-                  <div className="Common-title-font-attr">체크아웃</div>
-                  <div className="Common-content-font-attr">날짜 입력</div>
+            <div className="partition-attr"></div>
+            <div className="check-out-outter-wrapper">
+              <div type="button" className="check-in-inner-wrapper">
+                <div
+                  className="check-in-contents-wrapper"
+                  onClick={calenderToggle}
+                >
+                  <div className="common-title-font-attr">체크아웃</div>
+                  <div className="common-content-font-attr">날짜 입력</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="Partition-attr"></div>
-          <div className="NOP-outter-wrapper">
-            <div type="button" className="NOP-inner-wrapper">
-              <div className="Check-in-contents-wrapper" onClick={onButton}>
-                <div className="Common-title-font-attr">인원</div>
-                <div className="Common-content-font-attr">게스트 추가</div>
+          <div className="partition-attr"></div>
+          <div className="search-nop-outter-wrapper">
+            <div type="button" className="search-nop-inner-wrapper">
+              <div className="check-in-contents-wrapper" onClick={addNopToggle}>
+                <div className="common-title-font-attr">인원</div>
+                <div className="common-content-font-attr">게스트 추가</div>
               </div>
             </div>
-            <div className="Main-btn-outter-wrapper">
-              <button className="Main-btn-inner-wrapper" type="button">
-                <div className="Modify-Icon-outter-wrapper">
-                  <div className="Modify-Icon-inner-wrapper">
-                    <svg
-                      className="Svg-attr"
-                      viewBox="0 0 32 32"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g fill="none">
-                        <path d="m 13 24 c 6.07513 0 11 -4.92487 11 -11 c 0 -6.07513 -4.92487 -11 -11 -11 c -6.07513 0 -11 4.92487 -11 11 c 0 6.07513 4.92487 11 11 11 Z m 8 -3 l 9 9"></path>
-                      </g>
-                    </svg>
+            <div className="main-btn-outter-wrapper">
+              <button className="main-btn-inner-wrapper" type="button">
+                <div className="modify-Icon-outter-wrapper">
+                  <div className="modify-Icon-inner-wrapper">
+                    <ModifyIconLogo />
                   </div>
                 </div>
               </button>
@@ -98,28 +100,27 @@ export const Lodge = () => {
           </div>
         </div>
       </div>
-      <div className="location-on-button-attr" ref={el}>
-        {search && <Box />}
+      <div className="location-on-button-attr" ref={rangeOfapplicSelect}>
+        {showSearch && <Box />}
       </div>
-      <div className="nop-on-button-attr" ref={el}>
-        {add && <Add />}
+      <div className="nop-on-button-attr" ref={rangeOfapplicSelect}>
+        {showAddNop && <Add />}
       </div>
-      <div ref={el}>{calender && <CalenderModal />}</div>
+      <div ref={rangeOfapplicSelect}>{calender && <CalenderModal />}</div>
     </>
   );
 };
 
 // 체험 버튼 클릭 시
-
 export const Experience = () => {
   return (
-    <div className="Total-outter-wrapper">
-      <div className="Total-inner-wrapper">
-        <div className="Location-search-total-wrapper">
-          <div className="Location-search-inner-wrapper">
-            <label className="Inner-contents-wrapper">
-              <div className="Inner-contents-attr">
-                <div className="Inner-word-attr">위치</div>
+    <div className="total-outter-wrapper">
+      <div className="total-inner-wrapper">
+        <div className="location-search-total-wrapper">
+          <div className="location-search-inner-wrapper">
+            <label className="inner-contents-wrapper">
+              <div className="inner-contents-attr">
+                <div className="inner-word-attr">위치</div>
                 <input
                   className="search-input-area-attr"
                   placeholder="어디로 여행가세요?"
@@ -128,30 +129,22 @@ export const Experience = () => {
             </label>
           </div>
         </div>
-        <div className="Partition-attr"></div>
-        <div className="Date-time-outter-wrapper">
-          <div type="button" className="Check-in-inner-wrapper">
-            <div className="Check-in-contents-wrapper">
-              <div className="Common-title-font-attr">날짜</div>
-              <div className="Common-content-font-attr">
+        <div className="partition-attr"></div>
+        <div className="date-time-outter-wrapper">
+          <div type="button" className="check-in-inner-wrapper">
+            <div className="check-in-contents-wrapper">
+              <div className="common-title-font-attr">날짜</div>
+              <div className="common-content-font-attr">
                 원하는 날짜를 입력하세요
               </div>
             </div>
           </div>
         </div>
-        <div className="Main-btn-outter-wrapper">
-          <button className="Main-btn-inner-wrapper" type="button">
-            <div className="Modify-Icon-outter-wrapper">
-              <div className="Modify-Icon-inner-wrapper">
-                <svg
-                  className="Svg-attr"
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none">
-                    <path d="m 13 24 c 6.07513 0 11 -4.92487 11 -11 c 0 -6.07513 -4.92487 -11 -11 -11 c -6.07513 0 -11 4.92487 -11 11 c 0 6.07513 4.92487 11 11 11 Z m 8 -3 l 9 9"></path>
-                  </g>
-                </svg>
+        <div className="main-btn-outter-wrapper">
+          <button className="main-btn-inner-wrapper" type="button">
+            <div className="modify-Icon-outter-wrapper">
+              <div className="modify-Icon-inner-wrapper">
+                <ModifyIconLogo />
               </div>
             </div>
           </button>

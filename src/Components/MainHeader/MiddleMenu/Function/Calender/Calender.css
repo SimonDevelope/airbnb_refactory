@@ -37,14 +37,14 @@
   display: flex;
   height: 30%;
 }
-.calender-switch-btn-common-attr-A {
+.calender-switch-btn-common-attr-view-calender {
   position: relative;
   width: 50%;
   border-radius: 24px;
   border: 1px solid #dddddd;
   font-weight: 600;
 }
-.calender-switch-btn-common-attr-B {
+.calender-switch-btn-common-attr-view-flexible-schedule {
   width: 70%;
   border-radius: 24px;
   border: 1px solid #dddddd;

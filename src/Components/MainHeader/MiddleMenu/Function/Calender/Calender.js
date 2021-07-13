@@ -7,10 +7,10 @@ function CalenderModal() {
       <div className="calender-modal-inner-wrapper">
         <div className="calender-switch-area-wrapper">
           <div className="calender-switch-inner-btn-area">
-            <button className="calender-switch-btn-common-attr-A">
+            <button className="calender-switch-btn-common-attr-view-calender">
               <span>달력</span>
             </button>
-            <button className="calender-switch-btn-common-attr-B">
+            <button className="calender-switch-btn-common-attr-view-flexible-schedule">
               <span>유연한 일정</span>
             </button>
           </div>

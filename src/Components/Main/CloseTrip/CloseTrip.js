@@ -3,22 +3,22 @@ import './CloseTrip.css';
 
 export const TripList = ({ content }) => {
   return (
-    <div className="Image-N-word-total-attr">
-      <a href="/" className="Close-address-common-wrapper">
-        <div className="Close-image-Common-attr">
+    <div className="image-N-word-total-attr">
+      <a href="/" className="close-address-common-wrapper">
+        <div className="close-image-Common-attr">
           <picture>
             <source srcSet={content.source}></source>
             <img
-              src="Content.imgsrc"
-              alt="Content.imgsrc"
-              className="Close-common-image-attr"
+              src="content.imgsrc"
+              alt="content.imgsrc"
+              className="close-common-image-attr"
             ></img>
           </picture>
         </div>
-        <div className="Close-explain-common-outter-wrapper">
-          <div className="Close-explain-common-area-wrapper">
-            <span className="Location-word-total-attr">{content.title}</span>
-            <span className="Location-word-content-attr">
+        <div className="close-explain-common-outter-wrapper">
+          <div className="close-explain-common-area-wrapper">
+            <span className="location-word-total-attr">{content.title}</span>
+            <span className="location-word-content-attr">
               {content.content}
             </span>
           </div>
@@ -105,11 +105,11 @@ function Close() {
   ];
 
   return (
-    <div className="Close-area-total-wrapper">
-      <div className="Close-title-total-wrapper">
-        <span className="Close-title-word-attr">가까운 여행지 둘러보기</span>
+    <div className="close-area-total-wrapper">
+      <div className="close-title-total-wrapper">
+        <span className="close-title-word-attr">가까운 여행지 둘러보기</span>
       </div>
-      <div className="Close-inner-contents-outter-wrapper">
+      <div className="close-inner-contents-outter-wrapper">
         {Contents.map((Content) => (
           <TripList content={Content} />
         ))}

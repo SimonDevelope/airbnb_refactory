@@ -1,22 +1,22 @@
-.Hosting-total-warpper {
+.hosting-total-warpper {
   padding: 0 80px;
   margin: 0 auto;
   position: relative;
 }
-.Hosting-total-inner-wrapper {
+.hosting-total-inner-wrapper {
   display: block;
   margin: 32px 0;
   width: 100%;
   height: 470px;
 }
-.Hosting-image-attr {
+.hosting-image-attr {
   border-radius: 15px;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.Hosting-word-total-wrapper {
+.hosting-word-total-wrapper {
   padding: 0 80px;
   position: absolute;
   top: 0;
@@ -26,20 +26,20 @@
   height: 100%;
   text-decoration-line: none;
 }
-.Hosting-word-attr-A {
+.hosting-word-attr-A {
   display: block;
   font-size: 48px;
   font-weight: 600;
   color: rgb(255, 255, 255);
   margin: 15px 0;
 }
-.Hosting-word-attr-B {
+.hosting-word-attr-B {
   display: block;
   font-size: 18px;
   color: rgb(255, 255, 255);
   margin-bottom: 15px;
 }
-.Hosting-word-attr-C {
+.hosting-word-attr-C {
   display: flex;
   width: 150px;
   height: 50px;
@@ -50,7 +50,8 @@
   margin-top: 15px;
   margin: 15px 0;
 }
-.Hosting-word-attr-D {
+.hosting-word-attr-D {
+  font-weight: 600;
   display: block;
   color: rgb(0, 0, 0);
 }

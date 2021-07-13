@@ -1,9 +1,9 @@
-.Info-all-total-wrapper {
+.info-all-total-wrapper {
   height: 100%;
   padding: 0 80px;
   position: relative;
 }
-.Info-inner-partition {
+.info-inner-partition {
   width: 100%;
   height: 100%;
   display: grid;
@@ -11,25 +11,25 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 150px 150px;
 }
-.Info-list-area-wrapper {
+.info-list-area-wrapper {
   width: 100%;
   height: 100%;
 }
-.Info-list-wrapper {
+.info-list-wrapper {
   list-style: none;
   display: flex;
   flex-direction: column;
   padding-left: 0;
   padding-top: 24px;
 }
-.Info-common-list-attr {
+.info-common-list-attr {
   margin-top: 15px;
 }
-.Info-title-common-list-attr {
+.info-title-common-list-attr {
   font-size: 12px;
   font-weight: 600;
 }
-.Info-common-address-attr {
+.info-common-address-attr {
   text-decoration-line: none;
   color: rgb(0, 0, 0);
   font-size: 14px;

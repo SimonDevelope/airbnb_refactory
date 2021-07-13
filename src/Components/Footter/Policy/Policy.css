@@ -11,7 +11,7 @@
 .policy-cop-mark {
   font-size: 14px;
 }
-.left-container-wrapper {
+.policy-left-container-wrapper {
   display: flex;
   justify-content: space-evenly;
 }

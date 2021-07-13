@@ -1,4 +1,4 @@
-.Background-total-area-attr {
+.background-total-area-attr {
   width: 100%;
   height: 720px;
   display: inline-block;
@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
 }
-.Background-image-attr {
+.background-image-attr {
   display: inline-block;
   position: absolute;
   width: 100%;

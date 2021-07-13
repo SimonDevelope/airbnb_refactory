@@ -4,18 +4,18 @@ import './Experience.css';
 export const ExperienceList = ({ content }) => {
   return (
     <>
-      <a href="/" className="Expereince-contents-last-wrapper">
+      <a href="/" className="expereince-contents-last-wrapper">
         <picture>
           <source srcSet={content.source}></source>
           <img
             src={content.src}
             alt={content.src}
-            className="Experience-total-common-attr"
+            className="experience-total-common-attr"
           ></img>
         </picture>
-        <div className="Experience-contents-title-outter-wrapper">
-          <span className="Experience-common-attr-A">{content.title}</span>
-          <span className="Experience-common-attr-B">{content.sub}</span>
+        <div className="experience-contents-title-outter-wrapper">
+          <span className="experience-common-attr-A">{content.title}</span>
+          <span className="experience-common-attr-B">{content.sub}</span>
         </div>
       </a>
     </>
@@ -51,15 +51,15 @@ function Experience() {
   ];
 
   return (
-    <div className="Experience-total-wrapper">
-      <div className="Experience-title-total-wrapper">
-        <span className="Experience-word-total-attr">체험 둘러보기</span>
-        <span className="Experience-word-anoth-attr">
+    <div className="experience-total-wrapper">
+      <div className="experience-title-total-wrapper">
+        <span className="experience-word-total-attr">체험 둘러보기</span>
+        <span className="experience-word-anoth-attr">
           현지 전문가와 함께하는 독특한 액티비티에 오프라인이나 온라인으로
           참여해 보세요.
         </span>
       </div>
-      <div className="Experience-contents-total-inner-wrapper">
+      <div className="experience-contents-total-inner-wrapper">
         {contents.map((content) => (
           <ExperienceList content={content} />
         ))}
