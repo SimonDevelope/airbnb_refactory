@@ -51,10 +51,9 @@
   font-weight: 600;
 }
 .calender-two-way-area {
-  position: relative;
   display: grid;
   grid-template-rows: repeat(1, 100%);
-  grid-template-columns: repeat(2, 100%);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   max-width: 850px;
   height: 100%;

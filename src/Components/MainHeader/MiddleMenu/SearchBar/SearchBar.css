@@ -27,7 +27,7 @@
   cursor: pointer;
   display: block;
   border: 1px solid transparent;
-  min-width: 0;
+  width: 100%;
   padding: 14px 32px;
 }
 .inner-contents-attr {
@@ -76,11 +76,14 @@
   line-height: inherit;
   overflow: visible;
   text-align: left;
+  width: 80%;
 }
 .check-in-contents-wrapper {
   padding: 14px 24px;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  cursor: pointer;
 }
 .common-title-font-attr {
   font-size: 12px;
@@ -166,7 +169,7 @@
   position: relative;
   align-items: center;
   display: flex;
-  min-width: 0;
+  width: 100%;
 }
 .date-time-outter-wrapper {
   align-items: center;
@@ -177,4 +180,7 @@
 }
 .location-on-button-attr {
   position: absolute;
+}
+.recomand-N-datetime-outter-toggle-wrapper {
+  width: 510px;
 }

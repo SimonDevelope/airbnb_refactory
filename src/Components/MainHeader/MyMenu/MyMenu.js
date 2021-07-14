@@ -6,6 +6,7 @@ import {
   HambergetIconLogo,
   PeopleIconLogo,
 } from '../MainheaderSvg/MainHeaderSvg';
+
 function RightMenu() {
   const rangeOfMyMenuFuncSelect = useRef();
   const [menu, setMenu] = useState(false);
@@ -26,6 +27,7 @@ function RightMenu() {
       document.removeEventListener('mousedown', CloseMenu);
     };
   }, []);
+
   return (
     <>
       <div className="right-menu-total-wrapper">

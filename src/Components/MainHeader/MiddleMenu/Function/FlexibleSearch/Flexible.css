@@ -9,9 +9,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .flexible-search-inner-wrapper {
-  width: 100%;
   height: 100%;
-  margin: 0 auto;
   padding: 0 32px;
 }
 .flexible-search-title-wrapper {

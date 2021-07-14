@@ -4,10 +4,10 @@ import './Nop.css';
 function Add() {
   const [number, setNumber] = useState(0);
   const onIncrease = () => {
-    setNumber((prevNumber) => prevNumber + 1);
+    setNumber(number + 1);
   };
   const onDecrease = () => {
-    setNumber((prevNumber) => prevNumber - 1);
+    setNumber(number - 1);
   };
   return (
     <div className="nop-modal-outter-wrapper">
@@ -22,11 +22,19 @@ function Add() {
             </div>
           </div>
           <div className="nop-modal-cal-area">
-            <button className="nop-minus-btn-attr" onClick={onDecrease}>
+            <button
+              className="nop-minus-btn-attr"
+              type="button"
+              onClick={onDecrease}
+            >
               ﹣
             </button>
             <div className="nop-number-area-attr">{number}</div>
-            <button className="nop-plus-btn-attr" onClick={onIncrease}>
+            <button
+              className="nop-plus-btn-attr"
+              type="button"
+              onClick={onIncrease}
+            >
               ＋
             </button>
           </div>
@@ -42,11 +50,19 @@ function Add() {
             </div>
           </div>
           <div className="nop-modal-cal-area">
-            <button className="nop-minus-btn-attr" type="button">
+            <button
+              className="nop-minus-btn-attr"
+              type="button"
+              onClick={onDecrease}
+            >
               ﹣
             </button>
             <div className="nop-number-area-attr">{number}</div>
-            <button className="nop-plus-btn-attr" type="button">
+            <button
+              className="nop-plus-btn-attr"
+              type="button"
+              onClick={onIncrease}
+            >
               ＋
             </button>
           </div>
