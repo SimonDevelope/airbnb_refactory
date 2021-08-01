@@ -10,18 +10,27 @@ function Add() {
   };
   const downAdultNum = () => {
     setAdultNumber(adultNumber - 1);
+    if (adultNumber < 1) {
+      return setAdultNumber(0);
+    }
   };
   const onchildNum = () => {
     setChildNumber(childNumber + 1);
   };
   const downChildNum = () => {
     setChildNumber(childNumber - 1);
+    if (childNumber < 1) {
+      return setChildNumber(0);
+    }
   };
   const onInfantNum = () => {
     setInfantNumber(infantNumber + 1);
   };
   const downInfantNum = () => {
     setInfantNumber(infantNumber - 1);
+    if (infantNumber < 1) {
+      setInfantNumber(0);
+    }
   };
 
   return (
