@@ -1,0 +1,36 @@
+.word-total-wrapper {
+  height: 720px;
+  padding: 0 80px;
+  position: relative;
+}
+.word-total-inner-wrapper {
+  height: 100%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.background-outter-word-attr {
+  font-size: 18px;
+  font-weight: 600;
+}
+.background-inner-word-attr {
+  color: rgb(0, 0, 0);
+  display: block;
+  padding-bottom: 10px;
+}
+.inner-btn-outter-wrapper {
+  margin-top: 15px;
+}
+.inner-btn-wrapper {
+  width: 200px;
+  height: 70px;
+  border-radius: 35px;
+  border: none;
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

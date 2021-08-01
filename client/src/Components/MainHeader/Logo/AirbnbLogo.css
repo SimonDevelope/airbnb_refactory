@@ -1,0 +1,25 @@
+.logo-total-area {
+  flex: 1 0 140px;
+  z-index: 1;
+}
+.logo-boundary-area {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  height: 80px;
+  width: 102px;
+  position: relative;
+}
+.logo-boundary-area::before {
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  right: -8px;
+  bottom: 8px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.logo-outter-wrapper {
+  display: block;
+  color: #ffffff;
+}

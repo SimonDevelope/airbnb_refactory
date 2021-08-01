@@ -1,0 +1,57 @@
+.hosting-total-warpper {
+  padding: 0 80px;
+  margin: 0 auto;
+  position: relative;
+}
+.hosting-total-inner-wrapper {
+  display: block;
+  margin: 32px 0;
+  width: 100%;
+  height: 470px;
+}
+.hosting-image-attr {
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hosting-word-total-wrapper {
+  padding: 0 80px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-decoration-line: none;
+}
+.hosting-word-attr-A {
+  display: block;
+  font-size: 48px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin: 15px 0;
+}
+.hosting-word-attr-B {
+  display: block;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+.hosting-word-attr-C {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin: 15px 0;
+}
+.hosting-word-attr-D {
+  font-weight: 600;
+  display: block;
+  color: rgb(0, 0, 0);
+}

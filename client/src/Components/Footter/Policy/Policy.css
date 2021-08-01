@@ -1,0 +1,45 @@
+.policy-outter-wrapper {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  margin-top: 15px;
+}
+.policy-inner-contents-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+.policy-cop-mark {
+  font-size: 14px;
+}
+.policy-left-container-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.policy-address-common-attr {
+  text-decoration-line: none;
+}
+.policy-address-word-attr {
+  text-decoration-line: none;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+.policy-dot-attr {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-contain-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.policy-button-common-attr {
+  display: block;
+  background: transparent;
+  border: none;
+  text-decoration-line: underline;
+}
+.policy-button-inner-word-attr {
+  font-weight: 600;
+}
