@@ -41,7 +41,7 @@ function Policy() {
         <div className="policy-left-container-wrapper">
           <div className="policy-cop-mark">© 2021 Airbnb,inc.</div>
           {contents.map((content) => (
-            <PolicyContent content={content} />
+            <PolicyContent content={content} key={content.id} />
           ))}
         </div>
         <div className="right-contain-wrapper">

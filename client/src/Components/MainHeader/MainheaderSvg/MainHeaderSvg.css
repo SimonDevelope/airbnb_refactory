@@ -1,3 +1,7 @@
+.logo-boundary-area {
+  position: relative;
+  z-index: 1;
+}
 .logo-word-wrapper {
   display: block;
   width: 102px;
@@ -26,10 +30,12 @@
   color: #78787878;
 }
 .svg-attr {
-  display: inline-block;
+  display: block;
+  fill: none;
   height: 16px;
   width: 16px;
+  font-weight: 600;
   overflow: visible;
   stroke-width: 4;
-  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
 }

@@ -128,42 +128,48 @@
   flex: 1 0 0%;
 }
 .main-btn-outter-wrapper {
+  flex: 0 0 auto;
   margin-left: -6px;
   padding-right: 9px;
   position: relative;
-  display: flex;
-  align-items: center;
+  z-index: 5;
 }
 .main-btn-inner-wrapper {
-  position: relative;
-  background: #ff385c;
-  border: 0;
+  appearance: none;
+  background: transparent;
+  border: 0px;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 600;
-  line-height: 18px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  line-height: 16px;
+  margin: 0px;
   outline: none;
-  z-index: 0;
+  overflow: hidden;
+  padding: 0px;
+  text-align: inherit;
+  text-decoration: none;
+  user-select: auto;
+  background-color: #ff385c;
   border-radius: 24px;
+  height: 48px;
+  max-width: 48px;
+  position: relative;
+  transition: 0.2s max-width cubic-bezier(0.35, 0, 0.65, 1);
+  vertical-align: middle;
+  z-index: 0;
 }
 .modify-Icon-outter-wrapper {
-  display: inline-block;
+  display: inline-flex;
   padding: 16px;
   position: relative;
-  color: #ffffff;
+  z-index: 1;
 }
 
 .location-search-total-wrapper {
   flex: 1 0 0%;
-}
-.modify-Icon-inner-wrapper {
-  color: #ffffff;
-  display: inline-block;
 }
 .location-search-inner-wrapper {
   position: relative;
@@ -183,4 +189,8 @@
 }
 .recomand-N-datetime-outter-toggle-wrapper {
   width: 510px;
+}
+.counter-amount-view-pannel {
+  color: #222222;
+  font-weight: 600;
 }

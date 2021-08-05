@@ -4,7 +4,7 @@ import { AirbnbLogo } from '../MainheaderSvg/MainHeaderSvg';
 
 function Logo() {
   return (
-    <div className="logo-total-area">
+    <div className="logo-total-area" type="button">
       <a className="logo-boundary-area" href="/">
         <div className="logo-outter-wrapper">
           <AirbnbLogo />

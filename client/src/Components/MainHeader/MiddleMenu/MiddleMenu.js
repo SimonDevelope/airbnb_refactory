@@ -4,6 +4,7 @@ import { Lodge, Experience } from './SearchBar/SearchBar';
 
 function MiddleMenu() {
   const [turnOnMenu, setTurnOnMenu] = useState(false);
+
   const SwitchSearchBar = () => {
     setTurnOnMenu((turnOnMenu) => !turnOnMenu);
   };

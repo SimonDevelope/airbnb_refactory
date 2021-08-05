@@ -95,7 +95,11 @@ function Live() {
       <div className="live-contents-total-outter-wrapper">
         {livedata.map((LiveDataList) => {
           return (
-            <a href="/" className="live-common-total-outter-attr">
+            <a
+              href="/"
+              className="live-common-total-outter-attr"
+              key={LiveDataList.id}
+            >
               <div>
                 <source srcSet={LiveDataList.source}></source>
                 <img

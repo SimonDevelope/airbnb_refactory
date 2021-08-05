@@ -9,6 +9,7 @@ import { ModifyIconLogo } from '../../MainheaderSvg/MainHeaderSvg';
 
 export const Lodge = () => {
   const rangeOfapplicSelect = useRef();
+
   const [showSearch, setShowSearch] = useState(false);
   const searchToggle = () => {
     setShowSearch((showsearch) => !showsearch);
@@ -21,6 +22,56 @@ export const Lodge = () => {
   const calenderToggle = () => {
     setCalender((calender) => !calender);
   };
+
+  const [adultNumber, setAdultNumber] = useState(0);
+
+  const [changeGuest, setChangeGuest] = useState(false);
+
+  const onAdultNum = () => {
+    setAdultNumber(adultNumber + 1);
+    setChangeGuest(true);
+  };
+
+  const downAdultNum = () => {
+    setAdultNumber(adultNumber - 1);
+    if (adultNumber < 1) {
+      return setAdultNumber(0);
+    } else if (adultNumber + childNumber + infantNumber < 2) {
+      return setChangeGuest(false);
+    }
+  };
+  const [childNumber, setChildNumber] = useState(0);
+
+  const onchildNum = () => {
+    setChildNumber(childNumber + 1);
+    setChangeGuest(true);
+  };
+  const downChildNum = () => {
+    setChildNumber(childNumber - 1);
+
+    if (childNumber < 1) {
+      return setChildNumber(0);
+    } else if (adultNumber + childNumber + infantNumber < 2) {
+      return setChangeGuest(false);
+    }
+  };
+
+  const [infantNumber, setInfantNumber] = useState(0);
+
+  const onInfantNum = () => {
+    setInfantNumber(infantNumber + 1);
+    setChangeGuest(true);
+  };
+  const downInfantNum = () => {
+    setInfantNumber(infantNumber - 1);
+
+    if (infantNumber < 1) {
+      setInfantNumber(0);
+    } else if (infantNumber + adultNumber + childNumber < 2) {
+      return setChangeGuest(false);
+    }
+  };
+
   const closedModal = (e) => {
     if (
       rangeOfapplicSelect.current &&
@@ -87,7 +138,17 @@ export const Lodge = () => {
             <div type="button" className="search-nop-inner-wrapper">
               <div className="check-in-contents-wrapper" onClick={addNopToggle}>
                 <div className="common-title-font-attr">인원</div>
-                <div className="common-content-font-attr">게스트 추가</div>
+                <div className="common-content-font-attr">
+                  {changeGuest ? (
+                    <AddAmountNop
+                      adultnumber={adultNumber}
+                      childnumber={childNumber}
+                      infantnumber={infantNumber}
+                    />
+                  ) : (
+                    '게스트 추가'
+                  )}
+                </div>
               </div>
             </div>
             <div className="main-btn-outter-wrapper">
@@ -104,7 +165,21 @@ export const Lodge = () => {
       </div>
       <div ref={rangeOfapplicSelect}>
         <div className="location-on-button-attr">{showSearch && <Box />}</div>
-        <div className="nop-on-button-attr">{showAddNop && <Add />}</div>
+        <div className="nop-on-button-attr">
+          {showAddNop && (
+            <Add
+              adultNumber={adultNumber}
+              childNumber={childNumber}
+              infantNumber={infantNumber}
+              onAdultNum={onAdultNum}
+              downAdultNum={downAdultNum}
+              onchildNum={onchildNum}
+              downChildNum={downChildNum}
+              onInfantNum={onInfantNum}
+              downInfantNum={downInfantNum}
+            />
+          )}
+        </div>
         <div>{calender && <CalenderModal />}</div>
       </div>
     </>
@@ -175,9 +250,7 @@ export const Experience = () => {
           <div className="main-btn-outter-wrapper">
             <button className="main-btn-inner-wrapper" type="button">
               <div className="modify-Icon-outter-wrapper">
-                <div className="modify-Icon-inner-wrapper">
-                  <ModifyIconLogo />
-                </div>
+                <ModifyIconLogo />
               </div>
             </button>
           </div>
@@ -195,5 +268,14 @@ export const Experience = () => {
         </div>
       </div>
     </>
+  );
+};
+
+//카운터 총합 표현
+export const AddAmountNop = ({ adultnumber, childnumber, infantnumber }) => {
+  return (
+    <div className="counter-amount-view-pannel">
+      {`게스트: ${adultnumber + childnumber}, 유아${infantnumber}명`}
+    </div>
   );
 };

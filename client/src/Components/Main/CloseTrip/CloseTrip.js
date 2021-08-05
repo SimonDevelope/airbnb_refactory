@@ -141,7 +141,7 @@ function Close() {
       <div className="close-inner-contents-outter-wrapper">
         {closeContents.map((CloseData) => {
           return (
-            <div className="image-N-word-total-attr">
+            <div className="image-N-word-total-attr" key={CloseData.id}>
               <a href="/" className="close-address-common-wrapper">
                 <div className="close-image-Common-attr">
                   <picture>

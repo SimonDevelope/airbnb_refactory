@@ -1,38 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Nop.css';
 
-function Add() {
-  const [adultNumber, setAdultNumber] = useState(0);
-  const [childNumber, setChildNumber] = useState(0);
-  const [infantNumber, setInfantNumber] = useState(0);
-  const onAdultNum = () => {
-    setAdultNumber(adultNumber + 1);
-  };
-  const downAdultNum = () => {
-    setAdultNumber(adultNumber - 1);
-    if (adultNumber < 1) {
-      return setAdultNumber(0);
-    }
-  };
-  const onchildNum = () => {
-    setChildNumber(childNumber + 1);
-  };
-  const downChildNum = () => {
-    setChildNumber(childNumber - 1);
-    if (childNumber < 1) {
-      return setChildNumber(0);
-    }
-  };
-  const onInfantNum = () => {
-    setInfantNumber(infantNumber + 1);
-  };
-  const downInfantNum = () => {
-    setInfantNumber(infantNumber - 1);
-    if (infantNumber < 1) {
-      setInfantNumber(0);
-    }
-  };
-
+function Add({
+  adultNumber,
+  childNumber,
+  infantNumber,
+  onAdultNum,
+  downAdultNum,
+  onchildNum,
+  downChildNum,
+  onInfantNum,
+  downInfantNum,
+}) {
   return (
     <div className="nop-modal-outter-wrapper">
       <div className="nop-modal-inner-wrapper">
