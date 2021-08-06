@@ -6,6 +6,7 @@ import Recomend from '../Function/RecomendLocation/Recomend';
 import ExperCalender from '../Function/ExperienceCalender/ExperCalender';
 import { useEffect, useRef, useState } from 'react';
 import { ModifyIconLogo } from '../../MainheaderSvg/MainHeaderSvg';
+import Axios from 'axios';
 
 export const Lodge = () => {
   const rangeOfapplicSelect = useRef();
@@ -72,6 +73,17 @@ export const Lodge = () => {
     }
   };
 
+  const [locationContent, setLocationContent] = useState({
+    location: '',
+  });
+  const getLocation = (e) => {
+    const { name, value } = e.target;
+    setLocationContent({
+      ...locationContent,
+      [name]: value,
+    });
+  };
+
   const closedModal = (e) => {
     if (
       rangeOfapplicSelect.current &&
@@ -90,6 +102,18 @@ export const Lodge = () => {
     };
   }, []);
 
+  const submitLocationData = () => {
+    Axios.post('http://localhost:4000/location', {
+      location: locationContent.location,
+      adult: adultNumber,
+      child: childNumber,
+      infant: infantNumber,
+    }).then(() => {
+      alert('success');
+    });
+  };
+
+  console.log(locationContent.location);
   return (
     <>
       <div className="total-outter-wrapper">
@@ -103,6 +127,9 @@ export const Lodge = () => {
                 <input
                   className="search-input-area-attr"
                   placeholder="어디로 여행가세요?"
+                  type="text"
+                  onChange={getLocation}
+                  name="location"
                 ></input>
               </div>
             </label>
@@ -152,7 +179,10 @@ export const Lodge = () => {
               </div>
             </div>
             <div className="main-btn-outter-wrapper">
-              <button className="main-btn-inner-wrapper" type="button">
+              <button
+                className="main-btn-inner-wrapper"
+                onClick={submitLocationData}
+              >
                 <div className="modify-Icon-outter-wrapper">
                   <div className="modify-Icon-inner-wrapper">
                     <ModifyIconLogo />
@@ -248,7 +278,7 @@ export const Experience = () => {
             </div>
           </div>
           <div className="main-btn-outter-wrapper">
-            <button className="main-btn-inner-wrapper" type="button">
+            <button className="main-btn-inner-wrapper">
               <div className="modify-Icon-outter-wrapper">
                 <ModifyIconLogo />
               </div>

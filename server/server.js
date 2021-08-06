@@ -14,6 +14,9 @@ const connection = mysql.createConnection({
 });
 
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 connection.connect((err) => {
   if (err) throw err;
   console.log("connected");
@@ -40,6 +43,26 @@ app.get("/lookforexperi", (req, res) => {
   connection.query(sql, (err, result) => {
     if (err) throw err;
     res.send(result);
+  });
+});
+
+app.get("/location", (req, res) => {
+  const sql = "SELECT * FROM location";
+  connection.query(sql, (err, result) => {
+    if (err) throw err;
+    res.send(result);
+  });
+});
+
+app.post("/location", (req, res) => {
+  const location = req.body.location;
+  const adult = req.body.adult;
+  const child = req.body.child;
+  const infant = req.body.infant;
+  const sql =
+    "INSERT INTO location (location, adult, child, infant) VALUES (?, ?, ?, ?)";
+  connection.query(sql, [location, adult, child, infant], (err, result) => {
+    res.send("success");
   });
 });
 
