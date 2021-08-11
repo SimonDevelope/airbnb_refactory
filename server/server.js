@@ -61,8 +61,24 @@ app.post("/location", (req, res) => {
   const infant = req.body.infant;
   const sql =
     "INSERT INTO location (location, adult, child, infant) VALUES (?, ?, ?, ?)";
-  connection.query(sql, [location, adult, child, infant], (err, result) => {
-    res.send("success");
+  connection.query(sql, [location, adult, child, infant], (error, results) => {
+    // error가 있는 경우
+    if (error) {
+      const response = {
+        message: "error",
+      };
+
+      res.status(504).send(response);
+      // error가 없는 경우
+    } else {
+      const response = {
+        results,
+        message: "success",
+      };
+
+      // 이런 식으로 response의 body에 여러 field를 담은 객체를 보낼 수도 있다.
+      res.status(201).send(response);
+    }
   });
 });
 
