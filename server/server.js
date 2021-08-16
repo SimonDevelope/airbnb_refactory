@@ -24,25 +24,61 @@ connection.connect((err) => {
 
 app.get("/", (req, res) => {
   const sql = "SELECT * FROM information";
-  connection.query(sql, (err, result) => {
-    if (err) throw err;
-    res.send(result);
+  connection.query(sql, (error, results) => {
+    if (error) {
+      const response = {
+        message: "error",
+      };
+      res.status(400).send(response);
+      res.status(401).send(response);
+      res.status(403).send(response);
+      res.status(404).send(response);
+    } else {
+      const response = {
+        message: "success",
+      };
+      res.status(200).send(response);
+    }
   });
 });
 
 app.get("/tobelive", (req, res) => {
   const sql = "SELECT * FROM tobelive";
-  connection.query(sql, (err, result) => {
-    if (err) throw err;
-    res.send(result);
+  connection.query(sql, (error, results) => {
+    if (error) {
+      const response = {
+        message: "error",
+      };
+      res.status(400).send(response);
+      res.status(401).send(response);
+      res.status(403).send(response);
+      res.status(404).send(response);
+    } else {
+      const response = {
+        message: "success",
+      };
+      res.status(200).send(response);
+    }
   });
 });
 
 app.get("/lookforexperi", (req, res) => {
   const sql = "SELECT * FROM lookforexperi";
-  connection.query(sql, (err, result) => {
-    if (err) throw err;
-    res.send(result);
+  connection.query(sql, (error, results) => {
+    if (error) {
+      const response = {
+        message: "error",
+      };
+      res.status(400).send(response);
+      res.status(401).send(response);
+      res.status(403).send(response);
+      res.status(404).send(response);
+    } else {
+      const response = {
+        message: "success",
+      };
+      res.status(200).send(response);
+    }
   });
 });
 
@@ -61,8 +97,18 @@ app.post("/location", (req, res) => {
   const infant = req.body.infant;
   const sql =
     "INSERT INTO location (location, adult, child, infant) VALUES (?, ?, ?, ?)";
-  connection.query(sql, [location, adult, child, infant], (err, result) => {
-    res.send("success");
+  connection.query(sql, [location, adult, child, infant], (error, results) => {
+    if (error) {
+      const response = {
+        message: "error",
+      };
+      res.status(504).send(response);
+    } else {
+      const response = {
+        message: "success",
+      };
+      res.status(201).send(response);
+    }
   });
 });
 

@@ -76,11 +76,11 @@ export const Lodge = () => {
   const [locationContent, setLocationContent] = useState({
     location: '',
   });
+
   const getLocation = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
     setLocationContent({
-      ...locationContent,
-      [name]: value,
+      location: value,
     });
   };
 
@@ -102,8 +102,8 @@ export const Lodge = () => {
     };
   }, []);
 
-  const submitLocationData = () => {
-    Axios.post('http://localhost:4000/location', {
+  const submitLocationData = async () => {
+    const locationPost = await Axios.post('http://localhost:4000/location', {
       location: locationContent.location,
       adult: adultNumber,
       child: childNumber,
@@ -111,9 +111,11 @@ export const Lodge = () => {
     }).then(() => {
       alert('success');
     });
+    locationPost.status === 201
+      ? alert('요청이 성공적으로 저장되었습니다.')
+      : alert('요청에 실패하셨습니다.');
   };
 
-  console.log(locationContent.location);
   return (
     <>
       <div className="total-outter-wrapper">
