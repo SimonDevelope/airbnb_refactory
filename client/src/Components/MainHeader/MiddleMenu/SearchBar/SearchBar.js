@@ -102,15 +102,15 @@ export const Lodge = () => {
     };
   }, []);
 
-  const submitLocationData = () => {
-    Axios.post('http://localhost:4000/location', {
+  const submitLocationData = async () => {
+    const res = await Axios.post('http://localhost:4000/location', {
       location: locationContent.location,
       adult: adultNumber,
       child: childNumber,
       infant: infantNumber,
-    }).then(() => {
-      alert('success');
     });
+
+    res.status === 201 ? alert('성공') : alert('실패');
   };
 
   console.log(locationContent.location);
